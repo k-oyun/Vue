@@ -5,7 +5,6 @@ import Iterable from "./components/Iterable.vue";
 import ClassBinding from "./components/ClassBinding.vue";
 import Reactive from "./components/Reactive.vue";
 import Computed from "./components/Computed.vue";
-
 import Watch from "./components/Watch.vue";
 import Test from "./components/test.vue";
 import Practice1 from "./components/Practice1.vue";
@@ -14,6 +13,10 @@ import ChildComponent from "./components/ChildComponent.vue";
 import News from "./pages/News.vue";
 import EventRef from "./components/EventRef.vue";
 import Login from "./pages/Login.vue";
+import EventHandle from "./components/EventHandle.vue";
+import SelectBox from "./components/SelectBox.vue";
+import ArrayRender from "./components/ArrayRender.vue";
+import UserList from "./pages/UserList.vue";
 
 import { ref, reactive } from "vue";
 // const message = ref("");
@@ -109,7 +112,10 @@ import { ref, reactive } from "vue";
   <ChildComponent @send-message="handleMessage" /> -->
   <!-- <News /> -->
   <!-- <EventRef /> -->
-  <Login />
+  <!-- <Login /> -->
+  <!-- <SelectBox /> -->
+  <!-- <ArrayRender /> -->
+  <UserList />
 </template>
 
 <style scoped>
