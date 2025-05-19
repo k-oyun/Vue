@@ -1,30 +1,29 @@
 <script setup>
-import DataBinding from "./components/DataBinding.vue";
-import ConditionRender from "./components/ConditionRender.vue";
-import Iterable from "./components/Iterable.vue";
-import ClassBinding from "./components/ClassBinding.vue";
-import Reactive from "./components/Reactive.vue";
-import Computed from "./components/Computed.vue";
-import Watch from "./components/Watch.vue";
-import Test from "./components/test.vue";
-import Practice1 from "./components/Practice1.vue";
-import UserCard from "./pages/UserCard.vue";
-import ChildComponent from "./components/ChildComponent.vue";
-import News from "./pages/News.vue";
-import EventRef from "./components/EventRef.vue";
-import Login from "./pages/Login.vue";
-import EventHandle from "./components/EventHandle.vue";
-import SelectBox from "./components/SelectBox.vue";
-import ArrayRender from "./components/ArrayRender.vue";
-import UserList from "./pages/UserList.vue";
-import HelloWorld from "./components/HelloWorld.vue";
+// import DataBinding from "./components/components_unused/DataBinding.vue";
+// import ConditionRender from "./components/components_unused/ConditionRender.vue";
+// import Iterable from "./components/components_unused/Iterable.vue";
+// import ClassBinding from "./components/components_unused/ClassBinding.vue";
+// import Reactive from "./components/components_unused/Reactive.vue";
+// import Computed from "./components/components_unused/Computed.vue";
+// import Watch from "./components/components_unused/Watch.vue";
+// import Test from "./components/components_unused/test.vue";
+// import Practice1 from "./components/components_unused/Practice1.vue";
+// import UserCard from "./pages/UserCard.vue";
+// import ChildComponent from "./components/components_unused/ChildComponent.vue";
+// import News from "./pages/News.vue";
+// import EventRef from "./components/components_unused/EventRef.vue";
+// import Login from "./pages/Login.vue";
+// import EventHandle from "./components/components_unused/EventHandle.vue";
+// import SelectBox from "./components/components_unused/SelectBox.vue";
+// import ArrayRender from "./components/components_unused/ArrayRender.vue";
+// import UserList from "./pages/UserList.vue";
+import HelloWorld from "./components/components_unused/HelloWorld.vue";
 
 import { ref, reactive } from "vue";
 // const message = ref("");
 // const handleMessage = (payload) => {
 //   message.value = payload;
 // };
-
 const users = reactive([
   {
     name: "유승현",
@@ -100,23 +99,6 @@ const users = reactive([
 </script>
 
 <template>
-  <!-- <h1>App.vue 영역입니다.</h1> -->
-  <!-- <DataBinding /> -->
-  <!-- <ConditionRender /> -->
-  <!-- <Iterable /> -->
-  <!-- <ClassBinding /> -->
-  <!-- <Reactive /> -->
-  <!-- <Test /> -->
-  <!-- <Practice1 /> -->
-  <!-- <UserCard />
-    <p>자식에게 받은 메시지: {{ message }}</p>
-    <ChildComponent @send-message="handleMessage" /> -->
-  <!-- <News /> -->
-  <!-- <EventRef /> -->
-  <!-- <Login /> -->
-  <!-- <SelectBox /> -->
-  <!-- <ArrayRender /> -->
-  <!-- <UserList /> -->
   <div class="min-h-screen bg-gray-100 p-6 text-center">
     <h1 class="text-3xl font-bold text-blue-600">
       Vue 3 + Tailwind CSS Starter

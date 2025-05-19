@@ -7,7 +7,7 @@
 
 <script setup>
 import { ref, reactive, onMounted } from "vue";
-import UserItem from "../components/UserItem.vue";
+import UserItem from "../components/components_unused/UserItem.vue";
 const users = reactive([]);
 
 const fetchedData = [

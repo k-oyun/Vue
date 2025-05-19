@@ -7,8 +7,8 @@
 
 <script setup>
 import { ref, computed } from "vue";
-import NewsCategory from "../components/NewsCategory.vue";
-import NewsList from "../components/NewsList.vue";
+import NewsCategory from "../components/components_unused/NewsCategory.vue";
+import NewsList from "../components/components_unused/NewsList.vue";
 const selected = ref("전체");
 const allNews = [
   {
