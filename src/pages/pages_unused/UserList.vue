@@ -1,11 +1,13 @@
 <template>
   <div class="list-container">
     <ul>
-      <li class="list" v-for="user in userList" :key="user.email">
+      <div class="list" v-for="user in userList" :key="user.email">
         <p>이름 : {{ user.name }}</p>
+
         <p>이메일 : {{ user.email }}</p>
+
         <p>가입 날짜 : {{ user.regDate }}</p>
-      </li>
+      </div>
     </ul>
   </div>
 </template>
@@ -39,12 +41,15 @@ onMounted(() => {
   display: flex;
   /* width: 100vw; */
   flex-direction: column;
-  background-color: red;
+  /* background-color: red; */
   justify-content: center;
   align-items: center;
 }
 ul {
   display: flex;
+  width: 100%;
+  height: 100%;
+  /* background-color: green; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -52,9 +57,15 @@ ul {
 
 .list {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: black;
   list-style: none;
   margin: 10px;
-  /* background-color: black; */
+  width: 80%;
+  height: 100px;
+  background-color: gray;
+  border: 1px solid lightblue;
+  padding-left: 20px;
 }
 </style>
