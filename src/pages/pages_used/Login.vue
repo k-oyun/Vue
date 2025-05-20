@@ -28,15 +28,18 @@
 <script setup>
 import Input from "../../components/used/Input.vue";
 import Button from "../../components/used/Button.vue";
-import { ref, reactive } from "vue";
+import { ref, reactive, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import { useAuthStore } from "../../stores/auth";
+import { useModalStore } from "../../stores/modal";
+import Modal from "../../components/used/Modal.vue";
 const router = useRouter();
 const email = ref("");
 const pwd = ref("");
 const RegisteredEmail = localStorage.getItem("email");
 const RegisteredPwd = localStorage.getItem("pwd");
 const authStore = useAuthStore();
+const modalStore = useModalStore();
 const LoginBtn = () => {
   if (RegisteredEmail === email.value && RegisteredPwd === pwd.value) {
     alert("로그인 되었습니다.");
@@ -45,7 +48,18 @@ const LoginBtn = () => {
     authStore.setUsername(email);
     router.push("/Home");
   } else {
-    alert("아이디 또는 비밀번호를 확인하세요.");
+    modalStore.open({
+      title: "로그인 실패",
+      message: "이메일 비밀번호를 확인하세요.",
+      isOpen: true,
+    });
+    console.log(modalStore.isOpen);
+    console.log(modalStore.title);
+    console.log(modalStore.message);
   }
 };
+
+onMounted(() => {
+  console.log(modalStore.isOpen);
+});
 </script>
